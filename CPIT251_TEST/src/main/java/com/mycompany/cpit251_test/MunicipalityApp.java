@@ -18,7 +18,7 @@ public class MunicipalityApp {
 //            applicant.registerAndSubmitForm();
         } else if (role.equalsIgnoreCase("e")) {
 //            Employee employee = new Employee(scanner);
-            System.out.println("pp");
+            
         } else {
             System.out.println("Invalid role selected.");
         }
