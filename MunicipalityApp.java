@@ -15,7 +15,7 @@ public class MunicipalityApp {
 
         if (role.equalsIgnoreCase("a")) {
             Applicate applicant = new Applicate(scanner, fileHandler);
-//            applicant.registerAndSubmitForm();
+            applicant.registerAndSubmitForm();
         } else if (role.equalsIgnoreCase("e")) {
 //            Employee employee = new Employee(scanner);
             
