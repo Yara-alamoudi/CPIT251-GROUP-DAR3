@@ -50,3 +50,22 @@ public class Applicate {
         return found;
     }
 }
+private boolean Submit_Complaint() {
+    System.out.print("Do you want to submit a new complaint? (yes/no): ");
+    String choice = scanner.nextLine();
+    return choice.equalsIgnoreCase("yes");
+}
+private Form createForm(String userId) {
+    System.out.print("Enter your neighborhood name: ");
+    String neighborhood = scanner.nextLine();
+
+    String phone = fileHandler.getPhoneNumber(neighborhood);
+    if (phone == null) {
+        System.out.println("Neighborhood not found.");
+        return null;
+    }
+
+    System.out.println("Contact number for " + neighborhood + ": " + phone);
+
+    return new Form(scanner, userId, neighborhood, phone);
+}
