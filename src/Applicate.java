@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 /**
  *
- * @author maysqh
+ * 
  */
 public class Applicate {
 
