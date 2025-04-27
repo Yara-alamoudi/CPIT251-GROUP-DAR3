@@ -1,14 +1,9 @@
-
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-/**
- *
- * 
- */
 public class Applicate {
 
     private final Scanner scanner;
@@ -49,7 +44,7 @@ public class Applicate {
         }
         return found;
     }
-}
+
 private boolean Submit_Complaint() {
     System.out.print("Do you want to submit a new complaint? (yes/no): ");
     String choice = scanner.nextLine();
@@ -68,4 +63,18 @@ private Form createForm(String userId) {
     System.out.println("Contact number for " + neighborhood + ": " + phone);
 
     return new Form(scanner, userId, neighborhood, phone);
-}//
+}
+public void Applcnte_Complaint() throws IOException {
+        String userId = getUserId();
+
+        if (Previous_Complaints(userId) && !Submit_Complaint()) {
+            System.out.println("Thank you.");
+            return;
+        }
+
+        Form form = createForm(userId);
+        if (form != null) {
+            form.fill();  // Ask user to describe the complaint
+            form.save();  // Save it to a file
+        }
+    }}
