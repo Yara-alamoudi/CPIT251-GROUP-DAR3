@@ -1,3 +1,14 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
+
 public class Form {
     private final Scanner scanner;
     private final String userId;
@@ -35,7 +46,6 @@ public class Form {
         content.add("Ongoing: " + ongoing);
         content.add("Status: Submitted");
     }
-
     public void save() throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
         for (String line : content) {
@@ -45,3 +55,4 @@ public class Form {
         writer.close();
         System.out.println("Complaint submitted ");
     }
+}

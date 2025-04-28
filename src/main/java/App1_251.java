@@ -1,8 +1,6 @@
-
-import java.io.*;
-import java.util.*;
-
-public class MunicipalityApp {
+import java.io.IOException;
+import java.util.Scanner;
+public class App1_251 {
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
@@ -22,4 +20,4 @@ public class MunicipalityApp {
         }
 
     }
-}
+    }
