@@ -1,3 +1,11 @@
 {
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-21",
+        "path": "C:\\Program Files\\Java\\jdk-21",  // Adjust this path to your JDK location
+        "default": true
+      }
+    ],
     "java.configuration.updateBuildConfiguration": "interactive"
-}
+  }
+  

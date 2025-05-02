@@ -1,5 +1,7 @@
+
 import java.io.IOException;
 import java.util.Scanner;
+
 public class App1_251 {
 
     public static void main(String[] args) throws IOException {
@@ -12,8 +14,10 @@ public class App1_251 {
 
         if (role.equalsIgnoreCase("a")) {
             Applicate applicant = new Applicate(scanner, fileHandler);
-
+            applicant.Applcnte_Complaint();
         } else if (role.equalsIgnoreCase("e")) {
+            Employee employee = new Employee(scanner);
+            employee.view_Update_Complaints();
 
         } else {
             System.out.println("Invalid role selected.");
