@@ -48,7 +48,7 @@ public class Applicate {
             }
         }
         return found;
-    }
+    }//
 }
 private boolean Submit_Complaint() {
     System.out.print("Do you want to submit a new complaint? (yes/no): ");
