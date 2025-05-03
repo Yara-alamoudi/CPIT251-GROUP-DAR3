@@ -1,0 +1,10 @@
+User ID: 112233
+Neighborhood: Alsafaa
+Phone Contact: 0507778889
+Date: Sat May 03 14:56:34 AST 2025
+
+Complaint:
+Issue: Full Containers
+Start Date: May 3
+Ongoing: Yes
+Status: Solved

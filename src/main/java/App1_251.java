@@ -14,7 +14,7 @@ public class App1_251 {
 
         if (role.equalsIgnoreCase("a")) {
             Applicate applicant = new Applicate(scanner, fileHandler);
-            applicant.Applcnte_Complaint();
+            applicant.Applicnte_Complaint();
         } else if (role.equalsIgnoreCase("e")) {
             Employee employee = new Employee(scanner);
             employee.view_Update_Complaints();
